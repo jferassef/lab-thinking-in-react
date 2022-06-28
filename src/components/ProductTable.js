@@ -1,7 +1,7 @@
 import React from 'react';
 import ProductRow from './ProductRow';
 
-const ProductTable = ({ displayProducts }) => {
+const ProductTable = ({ children }) => {
   return (
     <div>
       <table>
@@ -12,7 +12,7 @@ const ProductTable = ({ displayProducts }) => {
           </tr>
         </thead>
 
-        {displayProducts.map((product) => (
+        {children.map((product) => (
           <ProductRow
             name={product.name}
             price={product.price}

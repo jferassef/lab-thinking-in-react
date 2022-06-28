@@ -21,7 +21,7 @@ const ProductsPage = () => {
         <SearchBar search={search} setSearch={setSearch} />
       </div>
       <div className="table">
-        <ProductTable displayProducts={displayProducts} />
+        <ProductTable children={displayProducts} />
       </div>
     </div>
   );
